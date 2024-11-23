@@ -1,15 +1,13 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-// import Navbar from "./components/Navbar/Navbar.jsx";
 import Home from "./components/Home/Home.jsx";
-import Footer from "./components/Footer/Footer.jsx";
 import About from "./components/About/About.jsx";
 import Gallery from "./components/Gallery/Gallery.jsx";
 import Layout from "./components/Layout/Layout.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "",
+    path: "/",
     element: <Layout />,
     children: [
       { index: true, element: <Home /> },
